@@ -33,7 +33,7 @@ class eZUniqueURLType extends eZURLType
      */
     public function __construct()
     {
-        $this->eZDataType( self::DATA_TYPE_STRING, ezi18n( 'extension/ezuniquedatatypes', "Unique URL"  ),
+        $this->eZDataType( self::DATA_TYPE_STRING, ezpI18n::tr( 'extension/ezuniquedatatypes', "Unique URL"  ),
         array( 'serialize_supported' => true ) );
         $this->MaxLenValidator = new eZIntegerValidator();
     }
@@ -58,7 +58,7 @@ class eZUniqueURLType extends eZURLType
             {
                 if ( ( $url == "" ) or ( $text == "" ) )
                 {
-                    $contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes',
+                    $contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes',
                                                                          'Input required.' ) );
                     return eZInputValidator::STATE_INVALID;
                 }
@@ -91,7 +91,7 @@ class eZUniqueURLType extends eZURLType
         {
             if( !eregi( "^(".implode( '|', $uniqueURLINI['AllowedSchemaList'] ).")", $data ) )
             {
-                $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Only URLs beginning with  "%schemas" are accepted!' , '', array( '%schemas' => implode( '", "', $uniqueURLINI['AllowedSchemaList'] ) ) ) );
+                $contentObjectAttribute->setValidationError( ezpI18n::tr( 'extension/ezuniquedatatypes', 'Only URLs beginning with  "%schemas" are accepted!' , '', array( '%schemas' => implode( '", "', $uniqueURLINI['AllowedSchemaList'] ) ) ) );
                 return eZInputValidator::STATE_INVALID;
             }
         }
@@ -130,7 +130,7 @@ class eZUniqueURLType extends eZURLType
 
             if( $rowCount >= 1 )
             {
-                $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given URL already exists in another content object of this type!' ) );
+                $contentObjectAttribute->setValidationError( ezpI18n::tr( 'extension/ezuniquedatatypes', 'Given URL already exists in another content object of this type!' ) );
                 return eZInputValidator::STATE_INVALID;
             }
         }

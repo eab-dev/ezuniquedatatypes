@@ -33,7 +33,7 @@ class eZUniqueStringType extends eZStringType
      */
     public function __construct()
     {
-        $this->eZDataType( self::DATA_TYPE_STRING, ezi18n( 'extension/ezuniquedatatypes', 'Unique string' ),
+        $this->eZDataType( self::DATA_TYPE_STRING, ezpI18n::tr( 'extension/ezuniquedatatypes', 'Unique string' ),
         array( 'serialize_supported' => true,
                                   'object_serialize_map' => array( 'data_text' => 'text' ) ) );
         $this->MaxLenValidator = new eZIntegerValidator();
@@ -55,7 +55,7 @@ class eZUniqueStringType extends eZStringType
         $textCodec = eZTextCodec::instance( false );
         if ( $textCodec->strlen( $data ) > $maxLen && $maxLen > 0 )
         {
-            $contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The input text is too long. The maximum number of characters allowed is %1.' ), $maxLen );
+            $contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The input text is too long. The maximum number of characters allowed is %1.' ), $maxLen );
             return eZInputValidator::STATE_INVALID;
         }
         return self::validateUniqueStringHTTPInput( $data, $contentObjectAttribute );
@@ -112,7 +112,7 @@ class eZUniqueStringType extends eZStringType
 
         if( $resultCount )
         {
-            $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given string already exists in another content object of this type!' ) );
+            $contentObjectAttribute->setValidationError( ezpI18n::tr( 'extension/ezuniquedatatypes', 'Given string already exists in another content object of this type!' ) );
             return eZInputValidator::STATE_INVALID;
         }
 
