@@ -130,7 +130,7 @@ class eZUniqueURLType extends eZURLType
 
             if( $rowCount >= 1 )
             {
-                $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given URL alread exists in another content object of this type!' ) );
+                $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given URL already exists in another content object of this type!' ) );
                 return eZInputValidator::STATE_INVALID;
             }
         }

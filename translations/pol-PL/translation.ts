@@ -10,11 +10,11 @@
         <translation>Unikalny URL</translation>
     </message>
      <message>
-        <source>Given URL alread exists in another content object of this type!</source>
+        <source>Given URL already exists in another content object of this type!</source>
         <translation>Podany URL już istnieje zapisany w innym obiekcie tego typu!</translation>
     </message>
      <message>
-        <source>Given string alread exists in another content object of this type!</source>
+        <source>Given string already exists in another content object of this type!</source>
         <translation>Podany ciąg już istnieje zapisany w innym obiekcie tego typu!</translation>
     </message>
      <message>

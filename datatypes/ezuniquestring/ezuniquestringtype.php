@@ -112,7 +112,7 @@ class eZUniqueStringType extends eZStringType
 
         if( $resultCount )
         {
-            $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given string alread exists in another content object of this type!' ) );
+            $contentObjectAttribute->setValidationError( ezi18n( 'extension/ezuniquedatatypes', 'Given string already exists in another content object of this type!' ) );
             return eZInputValidator::STATE_INVALID;
         }
 

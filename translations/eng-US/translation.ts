@@ -10,12 +10,12 @@
         <translation>Unique URL</translation>
     </message>
      <message>
-        <source>Given URL alread exists in another content object of this type!</source>
-        <translation>Given URL alread exists in another content object of this type!</translation>
+        <source>Given URL already exists in another content object of this type!</source>
+        <translation>Given URL already exists in another content object of this type!</translation>
     </message>
      <message>
-        <source>Given string alread exists in another content object of this type!</source>
-        <translation>Given string alread exists in another content object of this type!</translation>
+        <source>Given string already exists in another content object of this type!</source>
+        <translation>Given string already exists in another content object of this type!</translation>
     </message>
      <message>
         <source>Only URLs beginning with  "%schemas" are accepted!</source>
