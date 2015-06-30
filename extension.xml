@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>eZ Publish unique datatypes extension</name>
+        <version>0.5 beta</version>
+        <copyright>Copyright (C) Piotrek Karas, Copyright (C) SELF s.c.</copyright>
+        <license>GNU General Public License</license>
+        <info_url>http://eab.uk</info_url>
+    </metadata>
+</software>
