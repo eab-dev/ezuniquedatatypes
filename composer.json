@@ -1,0 +1,19 @@
+{
+    "name": "eab/ezuniquedatatypes",
+    "description": "eZ Publish unique datatypes extension",
+    "type": "ezpublish-legacy-extension",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Piotr Karaś",
+            "homepage": "http://www.mediaself.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ezsystems/ezpublish-legacy-installer": "~2.0"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "ezuniquedatatypes"
+    }
+}
