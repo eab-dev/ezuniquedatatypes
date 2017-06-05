@@ -1,7 +1,7 @@
 eZ Unique Datatypes
 ===================
 
-##Summary
+## Summary
 
 eZ Unique Datatypes extension for eZ Publish 4.0
 
@@ -18,19 +18,19 @@ Currently there are two datatypes provided:
 
 [More documentation](doc/readme.txt)
 
-##Copyright
+## Copyright
 
 Copyright (C) 2007 [mediaSELF.pl](http://www.mediaself.pl/)
 
-##License
+## License
 
 Licensed under GNU General Public License v2.0
 
-##Requirements
+## Requirements
 
 Requires eZ Publish 4 or eZ Publish 5 Legacy Edition.
 
-##Install
+## Install
 
 1. Copy the `ezuniquedatatypes` folder to the `extension` folder.
 
@@ -43,6 +43,6 @@ Requires eZ Publish 4 or eZ Publish 5 Legacy Edition.
         bin/php/ezpgenerateautoloads.php
         bin/php/ezcache.php --clear-all
 
-##Usage
+## Usage
 
 Edit classes and add attributes using the relevant datatype.
